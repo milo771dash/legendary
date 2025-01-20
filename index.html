@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Themed Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            animation: backgroundAnimation 6s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(135deg, #000000, #1a1a1a); }
+            50% { background: linear-gradient(135deg, #222831, #393e46); }
+            100% { background: linear-gradient(135deg, #000000, #1a1a1a); }
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            border: 2px solid #444;
+            border-radius: 15px;
+            background: rgba(20, 20, 20, 0.9);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00adb5;
+            text-shadow: 0 0 10px rgba(0, 173, 181, 0.8);
+            animation: glowText 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glowText {
+            0% { text-shadow: 0 0 10px rgba(0, 173, 181, 0.8); }
+            100% { text-shadow: 0 0 20px rgba(0, 173, 181, 1); }
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #aaa;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #f8b400;
+            text-shadow: 0 0 10px rgba(248, 180, 0, 0.8);
+            margin: 20px 0;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .fade {
+            animation: fadeText 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeText {
+            0% { color: #00adb5; }
+            100% { color: #f8b400; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade">I love playing Roblox and video games</h1>
+        <p>Spending time exploring virtual worlds and improving my skills.</p>
+        <p>In addition to gaming, I enjoy sports, which helps me balance my love for digital adventures with physical activity.</p>
+        <p>Whether I'm competing in a match or diving into a new game, I'm always up for a challenge and love staying active both online and offline.</p>
+        <blockquote>"RESPECT is the highest form of MOTIVATION"</blockquote>
+        <footer>- milo771dash</footer>
+    </div>
+</body>
+</html>
